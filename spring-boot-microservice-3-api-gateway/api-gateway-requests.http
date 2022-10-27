@@ -1,0 +1,70 @@
+### sign-up user admin
+POST http://localhost:5555/api/authentication/sign-up
+Content-Type: application/json
+
+{
+  "name": "test",
+  "username": "test",
+  "password": "test"
+}
+
+### sign-in user admin
+POST http://localhost:5555/api/authentication/sign-in
+Content-Type: application/json
+
+{
+  "username": "admin",
+  "password": "admin"
+}
+
+### sign-in user test
+POST http://localhost:5555/api/authentication/sign-in
+Content-Type: application/json
+
+{
+  "username": "test",
+  "password": "test"
+}
+
+### change role by user already exists on application
+PUT http://localhost:5555/api/user/change/ADMIN
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsInJvbGVzIjoiUk9MRV9VU0VSIiwidXNlcklkIjoxLCJleHAiOjE2NjUyMzk2ODR9.Q4RhfsKtHTkE5VSea5fcuB0IGuFQJ_xZIEqISb6N9PEY2PfqPyoAQlTmJ5mIC2PIWf1eR_b__tjxCjQph_gK3w
+
+### create a realState via gateway -> msvc-realstate
+POST http://localhost:5555/gateway/real-state
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsInJvbGVzIjoiUk9MRV9BRE1JTiIsInVzZXJJZCI6MSwiZXhwIjoxNjY1MjU5ODM3fQ.KEXnBoPoK2dHxgZQLx2b40CPeGRtWse4MDeajMQ81Mo-mvGlRDdhsyV5kjk0OQj9DwO99hs5bAwHLcpXmxKsyw
+
+{
+  "name": "House Of Marble",
+  "address": "Av El Moon 444",
+  "price": 2500.50
+}
+
+### get all realStates via gateway -> msvc-realstate
+GET http://localhost:5555/gateway/real-state
+Content-Type: application/json
+
+### delete a realState via gateway -> msvc-realstate
+DELETE http://localhost:5555/gateway/real-state/3
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsInJvbGVzIjoiUk9MRV9BRE1JTiIsInVzZXJJZCI6MSwiZXhwIjoxNjY1MjQ0NDM1fQ.FbUYBmmjmxp8XXQbTbickZ7KDnCK2e9cRWhZsxMgHi8F8w_9XOqTFqi_5LJMAAb6-sl3nChFX1r4-kIqLIui6A
+
+
+### create a purchase via gateway -> msvc-purchase
+POST http://localhost:5555/gateway/purchase
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsInJvbGVzIjoiUk9MRV9BRE1JTiIsInVzZXJJZCI6MSwiZXhwIjoxNjY1MjU3NTA2fQ.gAIdLnXS27fL_aHHhZjNm8amyXo3NC2NGQ1XpHxgTfVrdw91hG07K2cDgDnyQyJh0dA0LFzLvg5Ur2vQ0KIPpQ
+
+{
+  "title": "House´s Winter",
+  "userId": 1,
+  "realStateId": 13,
+  "price": 4000.45
+}
+
+### get all puchases via gateway -> msvc-purchase
+GET http://localhost:5555/gateway/purchase
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsInJvbGVzIjoiUk9MRV9BRE1JTiIsInVzZXJJZCI6MSwiZXhwIjoxNjY1MjU3NTA2fQ.gAIdLnXS27fL_aHHhZjNm8amyXo3NC2NGQ1XpHxgTfVrdw91hG07K2cDgDnyQyJh0dA0LFzLvg5Ur2vQ0KIPpQ
