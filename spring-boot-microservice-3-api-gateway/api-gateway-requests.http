@@ -68,3 +68,9 @@ Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsInJvbGVzIjoiUk9MR
 GET http://localhost:5555/gateway/purchase
 Content-Type: application/json
 Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsInJvbGVzIjoiUk9MRV9BRE1JTiIsInVzZXJJZCI6MSwiZXhwIjoxNjY1MjU3NTA2fQ.gAIdLnXS27fL_aHHhZjNm8amyXo3NC2NGQ1XpHxgTfVrdw91hG07K2cDgDnyQyJh0dA0LFzLvg5Ur2vQ0KIPpQ
+
+### get current user on api-gateway microservice
+GET http://localhost:5555/api/user
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsInJvbGVzIjoiUk9MRV9BRE1JTiIsInVzZXJJZCI6MiwiZXhwIjoxNjY3MTg4ODI4fQ.eFTPjDAmFsqQGcE6GKnOBYpcbD6Lo04nBCI4gfmZRdPAIjkqWxuK2-zEoHB-7EhqHm38cigEON5RqpX-6AdYEg
+
