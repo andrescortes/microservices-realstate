@@ -3,9 +3,9 @@ POST http://localhost:5555/api/authentication/sign-up
 Content-Type: application/json
 
 {
-  "name": "test",
-  "username": "test",
-  "password": "test"
+  "name": "admin",
+  "username": "admin",
+  "password": "admin"
 }
 
 ### sign-in user admin
@@ -34,7 +34,7 @@ Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsInJvbGVzIjoiUk9MR
 ### create a realState via gateway -> msvc-realstate
 POST http://localhost:5555/gateway/real-state
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsInJvbGVzIjoiUk9MRV9BRE1JTiIsInVzZXJJZCI6MSwiZXhwIjoxNjY1MjU5ODM3fQ.KEXnBoPoK2dHxgZQLx2b40CPeGRtWse4MDeajMQ81Mo-mvGlRDdhsyV5kjk0OQj9DwO99hs5bAwHLcpXmxKsyw
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsInJvbGVzIjoiUk9MRV9BRE1JTiIsInVzZXJJZCI6MiwiZXhwIjoxNjY3MTg4NjY0fQ.WWEHrymMNVA2GLK2ZTic_LDpeR2KOLsk8IwRkodL5KY1zvuzORhAzzOZ2VQ2ZIah0L4_FAeUVwgcvntHvriJKw
 
 {
   "name": "House Of Marble",

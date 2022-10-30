@@ -48,7 +48,7 @@ public class SecurityConfig {
         httpSecurity.sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS);
 
         httpSecurity.authorizeHttpRequests()
-            .antMatchers("/api/authentication/sign-in", "/api/authentication/sign-out")
+            .antMatchers("/api/authentication/sign-in", "/api/authentication/sign-out","/api/authentication/sign-up")
             .permitAll()
             .antMatchers(HttpMethod.GET, "/gateway/real-state").permitAll()
             .antMatchers("/gateway/real-state/**").hasRole(Role.ADMIN.name()).anyRequest()
