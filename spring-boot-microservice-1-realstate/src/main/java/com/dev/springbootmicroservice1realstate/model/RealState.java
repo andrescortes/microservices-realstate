@@ -24,7 +24,7 @@ public class RealState {
     @Column(name = "address", length = 500, nullable = false)
     private String address;
 
-    @Column(name = "image", length = 1200, nullable = true)
+    @Column(name = "image", length = 1200, nullable = false)
     private String picture;
 
     @Column(name = "price", nullable = false)

@@ -29,7 +29,7 @@ Content-Type: application/json
 ### change role by user already exists on application
 PUT http://localhost:5555/api/user/change/ADMIN
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsInJvbGVzIjoiUk9MRV9VU0VSIiwidXNlcklkIjoxLCJleHAiOjE2NjUyMzk2ODR9.Q4RhfsKtHTkE5VSea5fcuB0IGuFQJ_xZIEqISb6N9PEY2PfqPyoAQlTmJ5mIC2PIWf1eR_b__tjxCjQph_gK3w
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsInJvbGVzIjoiUk9MRV9VU0VSIiwidXNlcklkIjo0LCJleHAiOjE2Njc2NTk5NDJ9._9mwa4AH5MEghQqWG5Ggn8qhGMoynT7ZEmNtDYzzB3aABr9ZyQgZV-OJaFvTzFt3ETJvUU9v0WB01sxFsyYonw
 
 ### create a realState via gateway -> msvc-realstate
 POST http://localhost:5555/gateway/real-state
