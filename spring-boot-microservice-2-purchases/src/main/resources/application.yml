@@ -1,22 +1,3 @@
 spring:
-  application:
-    name: purchase-service
-  datasource:
-    url: jdbc:h2:mem:db_purchase
-    username: root
-    password: 1003
-    driver-class-name: org.h2.Driver
-  jpa:
-    database-platform: org.hibernate.dialect.H2Dialect
-    show-sql: true
-server:
-  port: 4444
-eureka:
-  client:
-    enabled: true
-    service-url:
-      defaultZone: http://localhost:6666/eureka/
-service:
-  security:
-    secure-key-username: admin
-    secure-key-password: admin
+  profiles:
+    active: dev

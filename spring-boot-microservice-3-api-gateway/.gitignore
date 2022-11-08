@@ -1,6 +1,7 @@
 HELP.md
 .gradle
 .env
+gradle.properties
 application-dev.yml
 application-prod.yml
 build/

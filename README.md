@@ -25,3 +25,9 @@ API gateways can improve the performance of a microservice architecture by provi
 
 ## Architecture Project
 ![Real-state's project architecture](/spring-boot-microservice-3-api-gateway/architecture-microservices-apigateway.PNG)
+
+## Errors
+
+### Jib Plugin Gradle
+
+- Error 401: [authenticate 401 unauthorized](https://stackoverflow.com/questions/72365455/how-to-setup-jib-container-to-authenticate-with-docker-remote-registry-to-pull-i)

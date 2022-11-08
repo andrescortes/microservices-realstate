@@ -1,11 +1,13 @@
 spring:
   application:
-    name: eureka-server
+    name: ms-eureka-server
 server:
   port: 6666
 eureka:
+  instance:
+    hostname: ${spring.application.name}
   client:
-    service-url:
-      defaultZone: http://localhost:${server.port}/eureka/
     register-with-eureka: false
     fetch-registry: false
+    service-url:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/

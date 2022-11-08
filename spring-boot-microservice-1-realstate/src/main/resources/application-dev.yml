@@ -1,0 +1,30 @@
+spring:
+  application:
+    name: real-state-service
+  datasource:
+    url: jdbc:postgresql://postgres14:5432/db_realstate
+    username: postgres
+    password: 1003
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+server:
+  port: 3333
+eureka:
+  instance:
+    hostname: ms-eureka-server
+  client:
+    enabled: true
+    service-url:
+      defaultZone: http://ms-eureka-server:6666/eureka/
+
+service:
+  security:
+    secure-key-username: admin
+    secure-key-password: admin
+    secure-key-username-2: admin2
+    secure-key-password-2: admin2

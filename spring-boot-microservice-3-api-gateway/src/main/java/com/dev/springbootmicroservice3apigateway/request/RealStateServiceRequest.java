@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
-
+//TODO: docker internal network to request ms
 @FeignClient(
     value = "real-state-service",//name service application defined in application.yml of msvc-realState
     path = "/api/real-state",

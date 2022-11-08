@@ -8,9 +8,17 @@ plugins {
 jib {
 	from {
 		image = 'adoptopenjdk/openjdk11:jre-nightly'
+		auth{
+			username = 'devcoderjava'
+			password = 'G3arsofwar1992'
+		}
 	}
 	to {
 		image = 'devcoderjava/ms-eureka-server'
+		auth{
+			username = project.property('username')
+			password = project.property('password')
+		}
 	}
 }
 

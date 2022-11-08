@@ -11,6 +11,10 @@ jib {
     }
     to {
         image = "devcoderjava/ms-api-gateway"
+        auth{
+            username = project.property('username')
+            password = project.property('password')
+        }
     }
 }
 
