@@ -14,7 +14,7 @@ Content-Type: application/json
 
 {
   "username": "admin",
-  "password": "admin"
+  "password": "1234567"
 }
 
 ### sign-in user test

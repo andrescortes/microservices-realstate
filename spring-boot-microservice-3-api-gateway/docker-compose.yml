@@ -1,0 +1,14 @@
+version: "3.9"
+services:
+  ms-api-gateway:
+    container_name: ms-api-gateway
+    image: devcoderjava/ms-api-gateway
+    ports:
+      - "5555:5555"
+    networks:
+      - spring
+    restart: always
+
+networks:
+  spring:
+    name: spring

@@ -1,38 +1,4 @@
 spring:
-  application:
-    name: api-gateway
-  datasource:
-    url: jdbc:mysql://localhost:3306/db_gateway
-#    ?useUnicode=true&useLegacyDatetimeCode=false&serverTimezone=UTC&createDatabaseIfNotExist=true&allowPublicKeyRetrieval_true&useSSL=false
-    username: root
-    password: 1003
-    driver-class-name: com.mysql.cj.jdbc.Driver
-  jpa:
-    database-platform: org.hibernate.dialect.MySQL8Dialect
-    hibernate:
-      ddl-auto: update
-    show-sql: true
-server:
-  port: 5555
-eureka:
-  client:
-    enabled: true
-    service-url:
-      defaultZone: http://localhost:6666/eureka/
+  profiles:
+    active: dev
 
-app:
-  jwt:
-    secret: microservice-api-gateway-secret-key-tutorial-microservice-api-gateway-secret-key-tutorial-microservice-api-gateway-secret-key-tutorial
-    expiration-in-ms: 86400000
-
-service:
-  security:
-    secure-key-username: admin
-    secure-key-password: admin
-
-real-state:
-  service:
-    url: http://localhost:3333
-purchase:
-  service:
-    url: http://localhost:4444

@@ -1,0 +1,14 @@
+version: "3.9"
+services:
+  ms-eureka-server:
+    container_name: ms-eureka-server
+    image: devcoderjava/ms-eureka-server
+    ports:
+      - "6666:6666"
+    networks:
+      - spring
+    restart: always
+
+networks:
+  spring:
+    name: spring

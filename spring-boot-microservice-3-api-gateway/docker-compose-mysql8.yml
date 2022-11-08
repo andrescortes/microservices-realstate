@@ -5,6 +5,8 @@ services:
     image: mysql:8
     ports:
       - "3306:3306"
+    networks:
+      - spring
     environment:
       MYSQL_ROOT_PASSWORD: 1003
       MYSQL_DATABASE: db_gateway
@@ -15,3 +17,7 @@ services:
 volumes:
   data-mysql:
     name: data-mysql
+
+networks:
+  spring:
+    name: spring
